@@ -62,7 +62,10 @@ flutter:
     - family: Cinzel
       fonts:
         - asset: fonts/Cinzel-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+    - family: Maitree
+      fonts:
+        - asset: fonts/Maitree-Regular.ttf
+        # - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
