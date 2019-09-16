@@ -9,6 +9,11 @@ import 'package:book_itech/screens/upload_file.dart';
 import 'package:flutter/material.dart';
 
 class MyService extends StatefulWidget {
+
+  final String user_name;
+  MyService({this.user_name});
+
+  
   @override
   _MyServiceState createState() => _MyServiceState();
 }
@@ -79,7 +84,7 @@ class _MyServiceState extends State<MyService> {
   Widget listProductMenu() {
     return ListTile(
       leading: Icon(
-        Icons.home,
+        Icons.face,
         size: mySizeIcon,
         color: myColor,
       ),
@@ -92,12 +97,12 @@ class _MyServiceState extends State<MyService> {
           fontFamily: 'Maitree',
         ),
       ),
-      // subtitle: Text('Show List All Product'),
+      // subtitle: Text(''),
       onTap: () {
-        setState(() {
-          myWidget = ListProduct();
-          Navigator.of(context).pop();
-        });
+        print("Clicked");
+        Navigator.pop(context);
+        Navigator.push(context,
+            new MaterialPageRoute(builder: (context) => new ListProduct()));
       },
     );
   }
@@ -302,7 +307,7 @@ class _MyServiceState extends State<MyService> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( 
+      appBar: AppBar(
         title: Text('BOOK ITECH'),
       ),
       drawer: myDrewerMenu(),

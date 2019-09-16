@@ -1,4 +1,4 @@
-import 'package:book_itech/screens/home.dart';
+import 'package:book_itech/screens/screens/authen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Authen(),
     );
   }
 }

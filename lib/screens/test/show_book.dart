@@ -8,7 +8,16 @@ class ShowBook extends StatefulWidget {
 }
 
 
-
+void main() {
+  runApp(
+    Center(
+      child: Text(
+        'Hello, world!',
+        textDirection: TextDirection.ltr,
+      ),
+    ),
+  );
+}
 
 class _ShowBookState extends State<ShowBook> {
   @override
